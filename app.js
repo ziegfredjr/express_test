@@ -15,7 +15,7 @@ app.use(express.static(path.join(__dirname,'bower_components')));
 //define routes
 app.use(require('./todos'));
 
-var port = process.env.PORT || 8081;
+var port = process.env.PORT || 8080;
 app.listen(port, function() {
 	console.log('ready on port ' + port);
 });
